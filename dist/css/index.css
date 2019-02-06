@@ -1,0 +1,209 @@
+/*! v1.0.0 */
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  display: none; }
+  .popup .ct {
+    position: absolute;
+    width: 5.03rem;
+    height: 5.14rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0); }
+  .popup .tv {
+    width: 5.02rem;
+    height: 4.42rem;
+    background-image: url(../img/sprite.popup.png);
+    background-position: -7.54rem 0px;
+    background-size: 12.56rem 9.72rem; }
+  .popup .wd {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0); }
+  .popup .btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: none;
+    width: 3.07rem;
+    height: 1.07rem; }
+  .popup.reconnect .wd {
+    background-image: url(../img/sprite.popup.png);
+    background-position: -3.68rem -5.69rem;
+    background-size: 12.56rem 9.72rem;
+    width: 2.51rem;
+    height: 1.89rem; }
+  .popup.reconnect .btn_recon {
+    background-image: url(../img/sprite.popup.png);
+    background-position: -7.54rem -4.46rem;
+    background-size: 12.56rem 9.72rem;
+    display: block;
+    width: 3.07rem;
+    height: 1.07rem; }
+  .popup.retry .wd {
+    background-image: url(../img/sprite.popup.png);
+    background-position: 0px -7.71rem;
+    background-size: 12.56rem 9.72rem;
+    width: 2.47rem;
+    height: 2.01rem; }
+  .popup.retry .btn_retry {
+    background-image: url(../img/sprite.popup.png);
+    background-position: -2.51rem -7.71rem;
+    background-size: 12.56rem 9.72rem;
+    display: block;
+    width: 3.07rem;
+    height: 1.07rem; }
+  .popup.over .wd {
+    background-image: url(../img/sprite.popup.png);
+    background-position: 0px -5.69rem;
+    background-size: 12.56rem 9.72rem;
+    width: 3.64rem;
+    height: 1.98rem; }
+  .popup.over .btn_iknow {
+    background-image: url(../img/sprite.popup.png);
+    background-position: -5.62rem -7.71rem;
+    background-size: 12.56rem 9.72rem;
+    display: block;
+    width: 3.07rem;
+    height: 1.07rem; }
+  .popup.over .close {
+    position: absolute;
+    width: 0.71rem;
+    height: 0.71rem;
+    background-image: url(../img/sprite.popup.png);
+    background-position: -10.65rem -4.46rem;
+    background-size: 12.56rem 9.72rem;
+    right: -0.71rem;
+    top: -0.71rem; }
+
+.finish {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #4f382b url(../img/shareBg.jpg) no-repeat center top;
+  background-size: 100% auto;
+  z-index: 11;
+  display: none; }
+  .finish.finish_app .sharetip {
+    opacity: 0; }
+  .finish.finish_app .share {
+    display: block;
+    float: right; }
+  .finish.finish_app .replay {
+    float: left; }
+  .finish .result {
+    width: 5.8rem;
+    margin: 0.2rem auto 0;
+    border: 0.12rem solid #fff;
+    display: block;
+    min-height: 8rem;
+    opacity: 0; }
+  .finish .btm {
+    width: 100%;
+    height: 5.35rem;
+    background-image: url(../img/sprite.popup.png);
+    background-position: 0px 0px;
+    background-size: 12.56rem 9.72rem;
+    padding-top: 0.35rem;
+    position: relative;
+    z-index: 2;
+    margin: -1rem auto 0;
+    opacity: 0; }
+  .finish .sharetip {
+    display: block;
+    width: 4rem;
+    height: 0.54rem;
+    background-image: url(../img/sprite.popup.png);
+    background-position: -6.23rem -6.8rem;
+    background-size: 12.56rem 9.72rem;
+    margin: 0 auto 0.3rem; }
+  .finish .btn {
+    overflow: hidden;
+    width: 6.85rem;
+    margin: 0 auto; }
+  .finish .replay {
+    width: 3.07rem;
+    height: 1.07rem;
+    background-image: url(../img/sprite.popup.png);
+    background-position: -9.34rem -5.69rem;
+    background-size: 12.56rem 9.72rem;
+    margin: 0 auto;
+    display: block; }
+  .finish .share {
+    display: none;
+    width: 3.07rem;
+    height: 1.07rem;
+    background-image: url(../img/sprite.popup.png);
+    background-position: -6.23rem -5.69rem;
+    background-size: 12.56rem 9.72rem; }
+  .finish .load {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3; }
+    .finish .load img {
+      width: 4.4rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate3d(-50%, -50%, 0);
+              transform: translate3d(-50%, -50%, 0); }
+
+.object_icon {
+  background: url(../img/objects.png) no-repeat 0 0;
+  background-size: 9.7rem 2.77rem; }
+
+.editTab {
+  position: fixed;
+  width: 7.5rem;
+  height: 4.28rem;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .editTab .tabTt {
+    width: 100%;
+    height: 1.19rem;
+    background-position: -2.2rem -1.58rem; }
+  .editTab .tabTt_dl span {
+    display: inline-block; }
+
+@media screen and (max-width: 320px) {
+  .loading .ct {
+    -webkit-transform: translate3d(-50%, -45%, 0) scale(0.9);
+            transform: translate3d(-50%, -45%, 0) scale(0.9); } }
+
+@media screen and (max-height: 585px) {
+  .loading .ct {
+    -webkit-transform: translate3d(-50%, -45%, 0) scale(0.9);
+            transform: translate3d(-50%, -45%, 0) scale(0.9); }
+  .finish .sharetip {
+    margin: 0 auto 0.15rem; } }
+

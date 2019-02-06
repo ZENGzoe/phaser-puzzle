@@ -1,0 +1,44 @@
+{"frames": {
+
+"television1.png":
+{
+	"frame": {"x":0,"y":0,"w":521,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":521,"h":457},
+	"sourceSize": {"w":521,"h":457}
+},
+"television2.png":
+{
+	"frame": {"x":521,"y":0,"w":466,"h":410},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":466,"h":410},
+	"sourceSize": {"w":466,"h":410}
+},
+"television3.png":
+{
+	"frame": {"x":0,"y":457,"w":466,"h":410},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":466,"h":410},
+	"sourceSize": {"w":466,"h":410}
+},
+"television4.png":
+{
+	"frame": {"x":466,"y":457,"w":516,"h":452},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":516,"h":452},
+	"sourceSize": {"w":516,"h":452}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "television.png",
+	"format": "RGBA8888",
+	"size": {"w":987,"h":909},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:743bd6c809687ea1c0204451071ecece:64c1b66d69a0e742fb69b1df56b2b5db:5b88bff7e6335f257cea9a8183627508$"
+}
+}

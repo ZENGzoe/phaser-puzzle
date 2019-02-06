@@ -1,0 +1,44 @@
+{"frames": {
+
+"sofatable1.png":
+{
+	"frame": {"x":0,"y":0,"w":466,"h":324},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":466,"h":324},
+	"sourceSize": {"w":466,"h":324}
+},
+"sofatable2.png":
+{
+	"frame": {"x":466,"y":0,"w":420,"h":321},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":420,"h":321},
+	"sourceSize": {"w":420,"h":321}
+},
+"sofatable3.png":
+{
+	"frame": {"x":0,"y":325,"w":750,"h":396},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":750,"h":398},
+	"sourceSize": {"w":750,"h":398}
+},
+"sofatable4.png":
+{
+	"frame": {"x":0,"y":722,"w":750,"h":367},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":750,"h":367},
+	"sourceSize": {"w":750,"h":367}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sofatable.png",
+	"format": "RGBA8888",
+	"size": {"w":886,"h":1089},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2250c5f5fd72c16e6f1eae30a058d4d9:4a84e8c61e107ef279325e7d07ce4263:c146c98ebe194295291a384c33dd79b6$"
+}
+}

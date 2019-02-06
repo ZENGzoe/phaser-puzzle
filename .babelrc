@@ -1,0 +1,22 @@
+{
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "Android >= 4.0",
+              "iOS >= 6",
+              "last 10 QQAndroid versions",
+              "last 10 UCAndroid versions"
+            ]
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "transform-runtime",
+      "transform-class-properties"
+    ]
+  }
+  

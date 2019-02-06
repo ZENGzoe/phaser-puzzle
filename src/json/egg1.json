@@ -1,0 +1,100 @@
+{"frames": {
+
+"egg0.png":
+{
+	"frame": {"x":400,"y":906,"w":399,"h":534},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":399,"h":534},
+	"sourceSize": {"w":399,"h":534}
+},
+"egg1.png":
+{
+	"frame": {"x":300,"y":456,"w":397,"h":368},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":397,"h":368},
+	"sourceSize": {"w":397,"h":368}
+},
+"egg2.png":
+{
+	"frame": {"x":0,"y":156,"w":410,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":410,"h":270},
+	"sourceSize": {"w":410,"h":270}
+},
+"egg3.png":
+{
+	"frame": {"x":600,"y":0,"w":300,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":156},
+	"sourceSize": {"w":300,"h":156}
+},
+"egg4.png":
+{
+	"frame": {"x":0,"y":0,"w":200,"h":142},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":142},
+	"sourceSize": {"w":200,"h":142}
+},
+"egg5.png":
+{
+	"frame": {"x":400,"y":0,"w":200,"h":145},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":145},
+	"sourceSize": {"w":200,"h":145}
+},
+"egg6.png":
+{
+	"frame": {"x":200,"y":0,"w":200,"h":144},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":144},
+	"sourceSize": {"w":200,"h":144}
+},
+"egg7.png":
+{
+	"frame": {"x":0,"y":456,"w":300,"h":350},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":350},
+	"sourceSize": {"w":300,"h":350}
+},
+"egg8.png":
+{
+	"frame": {"x":0,"y":906,"w":400,"h":503},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":503},
+	"sourceSize": {"w":400,"h":503}
+},
+"egg9.png":
+{
+	"frame": {"x":410,"y":156,"w":390,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":300},
+	"sourceSize": {"w":390,"h":300}
+},
+"egg10.png":
+{
+	"frame": {"x":697,"y":456,"w":320,"h":450},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":320,"h":450},
+	"sourceSize": {"w":320,"h":450}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "egg1.png",
+	"format": "RGBA8888",
+	"size": {"w":1017,"h":1440},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:55b43ca3c9d60f014c21c23cbf2aa451:959aa42ef223d0d88b3e5770e8d2422f:956999526af761f5a07d3be5f11f5804$"
+}
+}

@@ -1,0 +1,92 @@
+{"frames": {
+
+"article26.jpg":
+{
+	"frame": {"x":0,"y":0,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+"article30.jpg":
+{
+	"frame": {"x":0,"y":128,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+"article28.jpg":
+{
+	"frame": {"x":0,"y":256,"w":128,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":129},
+	"sourceSize": {"w":128,"h":129}
+},
+"article29.jpg":
+{
+	"frame": {"x":0,"y":385,"w":127,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":127,"h":129},
+	"sourceSize": {"w":127,"h":129}
+},
+"egg14.jpg":
+{
+	"frame": {"x":0,"y":514,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+"egg0.jpg":
+{
+	"frame": {"x":0,"y":642,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+"egg19.jpg":
+{
+	"frame": {"x":0,"y":770,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+},
+"egg3.jpg":
+{
+	"frame": {"x":0,"y":898,"w":128,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":129},
+	"sourceSize": {"w":128,"h":129}
+},
+"sofatable3.jpg":
+{
+	"frame": {"x":0,"y":1027,"w":128,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":129},
+	"sourceSize": {"w":128,"h":129}
+},
+"television.jpg":
+{
+	"frame": {"x":0,"y":1156,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":128},
+	"sourceSize": {"w":128,"h":128}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "resultObject.png",
+	"format": "RGBA8888",
+	"size": {"w":128,"h":1284},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a9571fe61bf0f546b0d485c0260c0116:ee63cd1807d662265d07bb0ecf6dcfa1:bd06e3d730a21f6fb31f7e4da11c737d$"
+}
+}

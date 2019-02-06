@@ -1,0 +1,212 @@
+body , html{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+
+.popup{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    z-index:10;
+    display: none;
+    .ct{
+        position: absolute;
+        width:503px;
+        height:514px;
+        top:50%;
+        left:50%;
+        transform:translate3d(-50%,-50%,0);
+    }
+    .tv{
+        width:502px;
+        height:442px;
+        background:url(../sprite/popup/tv.png) no-repeat 0 0;
+    }
+    .wd{
+        position: absolute;
+        top:35%;
+        left:50%;
+        transform:translate3d(-50%,-50%,0);
+    }
+    .btn{
+        position: absolute;
+        bottom:0;
+        left:50%;
+        transform:translateX(-50%);
+        display: none;
+        width:307px;
+        height:107px;
+    }
+
+    &.reconnect{
+        .wd{
+            background:url(../sprite/popup/reconnectCt.png) no-repeat 0 0;
+            width:251px;
+            height:189px;
+        }
+        .btn_recon{
+            background:url(../sprite/popup/reconnectBtn.png) no-repeat 0 0;
+            display: block;
+        }
+    }
+    &.retry{
+        .wd{
+            background: url(../sprite/popup/retryCt.png) no-repeat 0 0;
+            width:247px;
+            height:201px;
+        }
+        .btn_retry{
+            background:url(../sprite/popup/retryBtn.png) no-repeat 0 0;
+            display: block;
+        }
+    }
+    &.over{
+        .wd{
+            background: url(../sprite/popup/iknowCt.png) no-repeat 0 0;
+            width:364px;
+            height:198px;
+        }
+        .btn_iknow{
+            background:url(../sprite/popup/iknowBtn.png) no-repeat 0 0;
+            display: block;
+        }
+        .close{
+            position: absolute;
+            width:71px;
+            height:71px;
+            background:url(../sprite/popup/close.png) no-repeat 0 0;
+            right:-71px;
+            top:-71px;
+        }
+    }
+}
+.finish{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    background:#4f382b url(../img/shareBg.jpg) no-repeat center top;
+    background-size:100% auto;
+    z-index: 11;
+    display: none;
+    &.finish_app{
+
+        .sharetip{
+            opacity: 0;
+        }
+        .share{
+            display: block;
+            float:right;
+        }
+        .replay{
+            float: left;
+        }
+    }
+    .result{
+        width:580px;
+        margin:20px auto 0;
+        border:12px solid #fff;
+        display: block;
+        min-height:800px;
+        opacity: 0;
+    }
+    .btm{
+        // position: absolute;
+        width:100%;
+        height:535px;
+        // left:0;
+        // bottom:-300px;
+        background:url(../sprite/popup/came.png) no-repeat 0 0;
+        padding-top:35px;
+        position: relative;
+        z-index: 2;
+        margin : -100px auto 0;
+        opacity: 0;
+    }
+    .sharetip{
+        display: block;
+        width:400px;
+        height:54px;
+        background:url(../sprite/popup/shareTip.png) no-repeat 0 0;
+        margin:0 auto 30px;
+    }
+    .btn{
+        overflow: hidden;
+        width:685px;
+        margin:0 auto;
+    }
+    .replay{
+        // float:left;
+        width: 307px;
+        height:107px;
+        background:url(../sprite/popup/replayBtn.png) no-repeat 0 0;
+        margin:0 auto;
+        display: block;
+    }
+    .share{
+        // float:right;
+        display: none;
+        width:307px;
+        height:107px;
+        background:url(../sprite/popup/shareBtn.png) no-repeat 0 0;
+    }
+    .load{
+        position: absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        background:rgba(0,0,0,0.7);
+        z-index: 3;
+        img{
+            width:440px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate3d(-50%,-50%,0);
+        }
+    }
+}
+.object_icon{
+    background:url(../img/objects.png) no-repeat 0 0;
+    background-size:970px 277px;
+}
+.editTab{
+    position: fixed;
+    width:750px;
+    height:428px;
+    bottom:0;
+    left:0;
+    right:0;
+    .tabTt{
+        width:100%;
+        height:119px;
+        background-position: -220px -158px;
+    }
+    .tabTt_dl{
+        span{
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width:320px){
+    .loading .ct{
+        transform:translate3d(-50% , -45% ,0) scale(0.9);
+    }
+}
+@media screen and (max-height:585px){
+    .loading .ct{
+        transform:translate3d(-50% , -45% ,0) scale(0.9);
+    }
+    .finish .sharetip{
+        margin:0 auto 15px;
+    }   
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>春节全家福h5</title>
+    <meta name="description" content="春节全家福h5">
+    <meta name="keywords" content="春节全家福h5">
+    <script>
+        (function(window){
+            var STD_WIDTH = 750,    //标准宽度
+                STD_FONT_SIZE = 100,    //标准宽度下html的字体大小
+                root = document.documentElement,
+                fontSize,   //当前root的fontsize
+                scale,      //当前相对于标准宽度的缩放比例
+                tDelayResize = null,    //delayResize方法的计时器
+                onResizeCbs = [],       //resize事件回调组成的数组
+                pxToRem = function(px){     //px转rem
+                    return px / fontSize
+                },
+                stdPxToRem = function(stdPx){       //标准px转rem
+                    return stdPx / STD_FONT_SIZE;
+                },
+                remToPx = function(rem){    //rem转px
+                    return rem * fontSize
+                },
+                remToStdPx = function(rem){ //rem转标准px
+                    return rem * STD_FONT_SIZE;
+                },
+                pxToStdPx = function(px){ //px转标准px
+                    return px / scale 
+                },
+                stdPxToPx = function(px){   //标准px转px
+                    return px * scale;
+                },
+                resize = function(){        //重置fontsize大小
+                    scale = root.clientWidth / STD_WIDTH;
+                    var newFontSize = scale * STD_FONT_SIZE;
+                    if(fontSize !== newFontSize){
+                        fontSize = newFontSize;
+                        autoRem.fontSize = fontSize;
+                        autoRem.scale = scale;
+                        root.style.fontSize = fontSize + 'px';
+                        onResizeCbs.forEach(function(onResizeCb){
+                            onResizeCb();
+                        })
+                    }
+                },
+                delayResize = function(){   //延迟触发resize方法
+                    clearTimeout(tDelayResize);
+                    tDelayResize = setTimeout(resize , 100);
+                },
+                onResize = function(onResizeCb){    //绑定resize事件
+                    if(onResizeCb){
+                        onResizeCbs.push(onResizeCb)
+                    }
+                },
+                offResize = function(onResizeCb){       //解绑resize事件
+                    if(onResizeCb){
+                        var idx = onResizeCbs.indexOf(onResizeCb);
+                        if(~idx){
+                            onResizeCbs.push(idx , 1);
+                        }
+                    }else{
+                        onResizeCbs = []
+                    }
+                },
+                autoRem = {
+                    pxToRem : pxToRem,
+                    stdPxToRem : stdPxToRem,
+                    remToPx : remToPx,
+                    pxToStdPx : pxToStdPx,
+                    STD_FONT_SIZE : STD_FONT_SIZE,
+                    STD_WIDTH : STD_WIDTH , 
+                    fontSize : null,
+                    scale : null,
+                    onResize : onResize,
+                    offResize : offResize
+                };
+            resize();
+            window.addEventListener('resize' , delayResize , false);
+            window.autoRem = autoRem
+        })(window)
+    </script>
+    <style>
+        .loading{
+            position: fixed;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            z-index:2;
+            background:#4f382b;
+        }
+        .loading .progress{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%,-50%,0);
+            -webkit-transform: translate3d(-50%,-50%,0);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <div class="loading J_loading">
+        <span class="progress">0%</span>
+    </div>
+    <div class="popup J_popup">
+        <div class="ct">
+                <div class="tv">
+                    <span class="wd"></span>
+                </div>
+                <span class="btn btn_recon"></span>
+                <span class="btn btn_retry"></span>
+                <span class="btn btn_iknow"></span>
+                <span class="close"></span>
+        </div>
+    </div>
+    <div class="finish J_finish" style="display:none;">
+        <img src="" alt="" class="result" />
+        <div class="btm">
+            <span class="sharetip"></span>
+            <div class="btn">
+                <span class="replay"></span>
+                <span class="share"></span>
+            </div>
+        </div>
+        <div class="load">
+            <img src="img/upload_loading.gif" alt="">
+        </div>
+    </div>
+    <script src="js/phaser.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{"frames": {
+
+"article37.png":
+{
+	"frame": {"x":240,"y":0,"w":392,"h":258},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":392,"h":258},
+	"sourceSize": {"w":392,"h":258}
+},
+"article38.png":
+{
+	"frame": {"x":0,"y":261,"w":625,"h":278},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":625,"h":278},
+	"sourceSize": {"w":625,"h":278}
+},
+"article39.png":
+{
+	"frame": {"x":0,"y":539,"w":608,"h":290},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":608,"h":290},
+	"sourceSize": {"w":608,"h":290}
+},
+"article40.png":
+{
+	"frame": {"x":608,"y":539,"w":90,"h":367},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":367},
+	"sourceSize": {"w":90,"h":367}
+},
+"article41.png":
+{
+	"frame": {"x":698,"y":539,"w":100,"h":387},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":387},
+	"sourceSize": {"w":100,"h":387}
+},
+"article42.png":
+{
+	"frame": {"x":130,"y":0,"w":110,"h":199},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":110,"h":199},
+	"sourceSize": {"w":110,"h":199}
+},
+"article43.png":
+{
+	"frame": {"x":798,"y":539,"w":86,"h":418},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":418},
+	"sourceSize": {"w":86,"h":418}
+},
+"article44.png":
+{
+	"frame": {"x":0,"y":0,"w":130,"h":124},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":130,"h":124},
+	"sourceSize": {"w":130,"h":124}
+},
+"article45.png":
+{
+	"frame": {"x":632,"y":0,"w":99,"h":261},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":261},
+	"sourceSize": {"w":99,"h":261}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "article4.png",
+	"format": "RGBA8888",
+	"size": {"w":884,"h":957},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f1755b79cc6bc9c01b9744d63d256252:374c70bce89184605218d6fae9d5c241:499175e21b32e8a16ece3d91b5c68219$"
+}
+}
