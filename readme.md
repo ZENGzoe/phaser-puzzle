@@ -3,21 +3,21 @@
 ![](http://zengzoe.github.io/2019/01/24/%E5%A6%82%E4%BD%95%E7%94%A8Phaser%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%85%A8%E5%AE%B6%E7%A6%8F%E6%8B%BC%E5%9B%BEh5/02.jpg)
 
 
-[一、Phaser介绍](#一、Phaser介绍) 
-[二、整体框架搭建](#二、整体框架搭建) 
-[三、资源加载](#三、资源加载) 
-[四、游戏逻辑](#四、游戏逻辑)
-[五、完成](#五、完成)
-[六、总结](#六、总结)
-[参考文档](#参考文档)
+[一、Phaser介绍](#一、Phaser介绍) <br/>
+[二、整体框架搭建](#二、整体框架搭建) <br/>
+[三、资源加载](#三、资源加载) <br/>
+[四、游戏逻辑](#四、游戏逻辑)<br/>
+[五、完成](#五、完成)<br/>
+[六、总结](#六、总结)<br/>
+[参考文档](#参考文档)<br/>
 
-最近用Phaser做了一个全家福拼图h5的项目，这篇文章将会从零开始讲解如何用Phaser实现，最终效果如下：
+最近用Phaser做了一个全家福拼图h5的项目，这篇文章将会从零开始讲解如何用Phaser实现，最终效果如下：
 
 ![](http://zengzoe.github.io/2019/01/24/%E5%A6%82%E4%BD%95%E7%94%A8Phaser%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%85%A8%E5%AE%B6%E7%A6%8F%E6%8B%BC%E5%9B%BEh5/01.gif)
 
 <br/>
 
-[源码：https://github.com/ZENGzoe/phaser-puzzle.git](https://github.com/ZENGzoe/phaser-puzzle.git)
+[源码：https://github.com/ZENGzoe/phaser-puzzle.git](https://github.com/ZENGzoe/phaser-puzzle.git)<br/>
 [demo：https://zengzoe.github.io/phaser-puzzle/dist/](https://zengzoe.github.io/phaser-puzzle/dist/)
 ![](http://zengzoe.github.io/2019/01/24/%E5%A6%82%E4%BD%95%E7%94%A8Phaser%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%85%A8%E5%AE%B6%E7%A6%8F%E6%8B%BC%E5%9B%BEh5/07.png)
 
@@ -75,14 +75,14 @@ Phaser中通过`Phaser.Game`来创建游戏界面，也是游戏的核心。可�
 
 `Phaser.Game(width, height, renderer, parent, state, transparent, antialias, physicsConfig)`有八个参数：
 
-`width` ：游戏界面宽度，默认值为800。
-`height` ：游戏界面高度，默认值为600。
-`renderer` ：游戏渲染器，默认值为`Phaser.AUTO`，随机选择其他值：`Phaser.WEBGL`、`Phaser.CANVAS`、`Phaser.HEADLESS`（不进行渲染）。
-`parent` ：游戏界面挂载的DOM节点，可以为DOM id，或者标签。
-`state` ：游戏state对象，默认值为null，游戏的state对象一般包含方法（preload、create、update、render）。
-`transparent` ：是否设置游戏背景为透明，默认值为false。
-`antialias` ：是否显示图片抗锯齿。默认值为true。
-`physicsConfig` ：游戏物理引擎配置。
+`width` ：游戏界面宽度，默认值为800。<br/>
+`height` ：游戏界面高度，默认值为600。<br/>
+`renderer` ：游戏渲染器，默认值为`Phaser.AUTO`，随机选择其他值：`Phaser.WEBGL`、`Phaser.CANVAS`、`Phaser.HEADLESS`（不进行渲染）。<br/>
+`parent` ：游戏界面挂载的DOM节点，可以为DOM id，或者标签。<br/>
+`state` ：游戏state对象，默认值为null，游戏的state对象一般包含方法（preload、create、update、render）。<br/>
+`transparent` ：是否设置游戏背景为透明，默认值为false。<br/>
+`antialias` ：是否显示图片抗锯齿。默认值为true。<br/>
+`physicsConfig` ：游戏物理引擎配置。<br/>
 ```
 
 //index.js
@@ -143,7 +143,7 @@ customGame.state.start('Load');
 
 <br/>
 
-# 三、资源加载
+# 三、资源加载
 
 ```
 //load.js
@@ -306,7 +306,9 @@ const play = {
 module.exports = play;
 ```
 `createTelevision`创建同`createTableSofa`，可通过源码查看。
+
 `object.anchor.set(0,0)` 设置对象偏移位置的基准点，默认是左上角的位置（0,0），如果是右下角则是（1,1），对象的中间点是（0.5,0.5）；
+
 `object.name = 'name'`设置对象的名称，可通过`group.getByName(name)`从组中获取该对象。
 
 这样就会在页面上创建一个这样的画面：
@@ -597,11 +599,17 @@ switchPost : function(e){
 因此给元素添加滑动的逻辑如下：
 
 1.触发滑动的父元素的拖拽功能，并且禁止横向拖拽，允许纵享拖拽。
+
 2.给元素添加物理引擎（因为要给元素一个惯性的速度）。
+
 3.结合onDragStart、onDragStop和onInputUp三个事件的触发判断用户的操作是点击还是滑动，如果是滑动，则三个事件都会触发，并且onInputUp的事件优先于onDragStop，如果是点击，则只会触发InputUp。
+
 4.在onDragUpdate设置边界点，如果用户滑动超过一定边界点则只能滑动到边界点。
+
 5.在onDragStop判断用户滑动的距离和时间计算出手势停止时，给定元素的速度。
+
 6.在onDragStart判断是否有因惯性正在移动的元素，如果有则让该元素停止运动，让移动速度为0。
+
 6.在update里让移动元素的速度减少直至为0停下来模拟惯性。
 
 ```
