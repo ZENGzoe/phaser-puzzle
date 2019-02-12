@@ -17,8 +17,10 @@
 
 <br/>
 
-[源码：https://github.com/ZENGzoe/phaser-puzzle.git](https://github.com/ZENGzoe/phaser-puzzle.git)<br/>
+[源码：https://github.com/ZENGzoe/phaser-puzzle.git](https://github.com/ZENGzoe/phaser-puzzle.git) 
+
 [demo：https://zengzoe.github.io/phaser-puzzle/dist/](https://zengzoe.github.io/phaser-puzzle/dist/)
+
 ![](http://zengzoe.github.io/2019/01/24/%E5%A6%82%E4%BD%95%E7%94%A8Phaser%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%85%A8%E5%AE%B6%E7%A6%8F%E6%8B%BC%E5%9B%BEh5/07.png)
 
 # 一、Phaser介绍
@@ -946,7 +948,9 @@ showResult : function(src){
 以上是这个h5的主要实现过程，由于代码细节较多，部分代码未贴出，需要配合源码阅读～～
 
 [源码：https://github.com/ZENGzoe/phaser-puzzle.git](https://github.com/ZENGzoe/phaser-puzzle.git)
+
 [demo：https://zengzoe.github.io/phaser-puzzle/dist/](https://zengzoe.github.io/phaser-puzzle/dist/)
+
 ![](http://zengzoe.github.io/2019/01/24/%E5%A6%82%E4%BD%95%E7%94%A8Phaser%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%85%A8%E5%AE%B6%E7%A6%8F%E6%8B%BC%E5%9B%BEh5/07.png)
 
 <br/>
